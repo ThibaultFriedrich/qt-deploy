@@ -6,7 +6,7 @@ var os = require('os');
 
 if ('win32' === os.platform()) {
 
-    var windowsQtCompile = require('../src/qt-compile');
+    var windowsQtDeploy = require('../src/deploy');
 
     process.env.QMAKE_PATH = 'C:\\Qt\\Qt5.4.1\\5.4\\msvc2010_opengl\\bin';
     process.env.JOM_PATH = 'C:\\Qt\\Qt5.4.1\\Tools\\QtCreator\\bin'
