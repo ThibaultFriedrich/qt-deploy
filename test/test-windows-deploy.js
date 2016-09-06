@@ -20,6 +20,7 @@ if ('win32' === os.platform()) {
                 fs.removeSync(path.join(__dirname, 'build'));
                 windowsQtDeploy({
                     exec: path.join(__dirname, '../examples/hello-world/build/release/hello-world.exe'),
+                    debug: false
                 }, function (err, execname) {
                     expect(err).to.be.null;
                     done();
