@@ -15,5 +15,12 @@
   "bugs": {
     "url": "https://github.com/ThibaultFriedrich/qt-deploy/issues"
   },
-  "homepage": "https://github.com/ThibaultFriedrich/qt-deploy#readme"
+  "homepage": "https://github.com/ThibaultFriedrich/qt-deploy#readme",
+  "dependencies": {
+    "callsite": "^1.0.0"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.0.2"
+  }
 }
