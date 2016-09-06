@@ -4,6 +4,9 @@ var callsite = require('callsite');
 var util = require('util');
 var exec = require('child_process').exec;
 
+var maxBuffer = 1024 * 1024 * 1024;
+
+
 module.exports = function (opts, callback) {
 
     var previousCwd = process.cwd();
