@@ -23,7 +23,7 @@ module.exports = function (opts, callback) {
         opts.exec = path.join(dirname, opts.exec);
     }
 
-    if(!process.env.JOM_PATH) {
+    if(!process.env.QMAKE_PATH) {
         callback && callback(new Error('Environment variable JOM_PATH undefined'));
         return;
     }
@@ -33,7 +33,7 @@ module.exports = function (opts, callback) {
         if (opts.verbose) {
             console.log('os detection done: windows');
         }
-        var windeployqt = path.join(process.env.JOM_PATH, 'windeployqt.exe');
+        var windeployqt = path.join(process.env.QMAKE_PATH, 'windeployqt.exe');
         var new_env = util._extend(process.env, {LANG: "en"});
         exec(windeployqt+' '+opts.exec,{env: new_env, maxBuffer: maxBuffer}, function (err, stdout, stderr) {
             process.chdir(previousCwd);
