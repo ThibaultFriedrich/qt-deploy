@@ -21,7 +21,8 @@ Setup the environment variables for MSVC 2010
 var qtDeploy = require('qt-deploy');
 qtDeploy({
     exec: '<path to executable>',
-    verbose: true // default is false
+    verbose: true, // default is false
+    debug: true // default is false
 }, function (err) {
 
 });
