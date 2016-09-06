@@ -47,4 +47,4 @@ module.exports = function (opts, callback) {
         callback && callback(new Error('The os '+os.platform()+' is not managed for now.'));
     }
 
-});
+};
