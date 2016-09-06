@@ -18,7 +18,7 @@ if ('win32' === os.platform()) {
 
             it('absolute path src', function (done) {
                 fs.removeSync(path.join(__dirname, 'build'));
-                windowsQtCompile({
+                windowsQtDeploy({
                     exec: path.join(__dirname, '../examples/hello-world/build/release/hello-world.exe'),
                 }, function (err, execname) {
                     expect(err).to.be.null;
