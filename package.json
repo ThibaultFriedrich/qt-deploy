@@ -1,0 +1,19 @@
+{
+  "name": "qt-deploy",
+  "version": "0.1.0",
+  "description": "Module to easily add dll to qt executable",
+  "main": "src/deploy.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ThibaultFriedrich/qt-deploy.git"
+  },
+  "author": "Thibault Friedrich <tf@elqui.fr>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ThibaultFriedrich/qt-deploy/issues"
+  },
+  "homepage": "https://github.com/ThibaultFriedrich/qt-deploy#readme"
+}
