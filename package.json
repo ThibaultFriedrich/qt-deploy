@@ -1,6 +1,6 @@
 {
   "name": "qt-deploy",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Module to easily add dll to qt executable",
   "main": "src/deploy.js",
   "scripts": {

@@ -34,9 +34,9 @@ module.exports = function (opts, callback) {
 
     if ('win32' === os.platform()) {
         process.chdir(path.dirname(opts.exec));
-        if (opts.verbose) {
-            console.log('os detection done: windows');
-        }
+        //if (opts.verbose) {
+            //console.log('os detection done: windows');
+        //}
         var windeployqt = path.join(process.env.QMAKE_PATH, 'windeployqt.exe');
         var new_env = util._extend(process.env, {LANG: "en"});
         var opts = (opts.debug?' --debug ':' --release ');
@@ -45,9 +45,9 @@ module.exports = function (opts, callback) {
             if (err) {
                 callback && callback(err);
             } else {
-                if (opts.verbose) {
-                    console.log('deployment done: windows');
-                }
+                //if (opts.verbose) {
+                    //console.log('deployment done: windows');
+                //}
                 callback && callback();
             }
         });
