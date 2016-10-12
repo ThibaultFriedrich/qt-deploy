@@ -39,8 +39,8 @@ module.exports = function (opts, callback) {
         //}
         var windeployqt = path.join(process.env.QMAKE_PATH, 'windeployqt.exe');
         var new_env = util._extend(process.env, {LANG: "en"});
-        var opts = (opts.debug?' --debug ':' --release ');
-        exec(windeployqt+opts+' '+opts.exec,{env: new_env, maxBuffer: maxBuffer}, function (err, stdout, stderr) {
+        var opt = (opts.debug?' --debug ':' --release ');
+        exec(windeployqt+opt+' '+opts.exec,{env: new_env, maxBuffer: maxBuffer}, function (err, stdout, stderr) {
             process.chdir(previousCwd);
             if (err) {
                 callback && callback(err);
